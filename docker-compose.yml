@@ -1,0 +1,57 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: namadno-ai-support-postgres
+    environment:
+      POSTGRES_DB: namadno_ai_support
+      POSTGRES_USER: namadno
+      POSTGRES_PASSWORD: changeme
+    ports:
+      - "5432:5432"
+    volumes:
+      - namadno_ai_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U namadno -d namadno_ai_support"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: namadno-ai-support:local
+    container_name: namadno-ai-support-api
+    ports:
+      - "5080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=namadno_ai_support;Username=namadno;Password=changeme
+      LLM__Provider: OpenAICompatible
+      Embedding__Provider: OpenAICompatible
+      LLM__BaseUrl: http://host.docker.internal:1234/v1
+      LLM__ApiKey: lm-studio
+      LLM__Model: qwen3.5-9b
+      LLM__EnableThinking: "false"
+      LLM__TimeoutSeconds: "120"
+      Embedding__BaseUrl: http://host.docker.internal:1234/v1
+      Embedding__ApiKey: lm-studio
+      Embedding__Model: Qwen3-Embedding-0.6B
+      Embedding__Dimensions: "1024"
+      ExternalServices__Mode: Mock
+      Auth__Strategy: Development
+      Auth__DevelopmentUserId: dev-user
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+      start_period: 40s
+
+volumes:
+  namadno_ai_pg:

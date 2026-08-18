@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Namadno.AI.Support.ArchitectureTests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NetArchTest.Rules" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Namadno.AI.Support.Api\Namadno.AI.Support.Api.csproj" />
+    <ProjectReference Include="..\..\src\Namadno.AI.Support.Application\Namadno.AI.Support.Application.csproj" />
+    <ProjectReference Include="..\..\src\Namadno.AI.Support.Domain\Namadno.AI.Support.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Namadno.AI.Support.Infrastructure\Namadno.AI.Support.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+</Project>

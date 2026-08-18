@@ -1,0 +1,80 @@
+# Build output (**/ is required so nested project folders are ignored)
+**/[Bb]in/
+**/[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Oo]ut/
+publish/
+artifacts/
+.artifacts/
+*.binlog
+MSBuild_Logs/
+
+# .NET / NuGet
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+*.nuget.props
+*.nuget.targets
+
+# IDE / editor
+.vs/
+.idea/
+.vscode/
+.ionide/
+.history/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.userprefs
+*.DotSettings.user
+
+# Test and coverage
+TestResults/
+[Tt]est[Rr]esult*/
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+*.trx
+BenchmarkDotNet.Artifacts/
+
+# Local secrets and machine-specific config
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.key
+
+# Logs
+logs/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# Local databases and Docker bind-mount data
+*.db
+*.db-shm
+*.db-wal
+docker/data/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temp / backup
+*.tmp
+*~
+*.bak
+*.swp

@@ -1,0 +1,402 @@
+{
+  "FaqSeed": {
+    "items": [
+      {
+        "question": "نمادنو چیست؟",
+        "answer": "نمادنو یک سوپر اپلیکیشن مالی است که مجموعه‌ای از خدمات مالی و سرمایه‌گذاری را در یک بستر یکپارچه ارائه می‌دهد. کاربران می‌توانند از طریق این اپلیکیشن از خدماتی مانند سرمایه‌گذاری، نئوبانک، بیمه، تسهیلات و خدمات عمومی استفاده کنند.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "نمادنو سوپر اپلیکیشن مالی",
+        "navigation": null,
+        "priority": 100
+      },
+      {
+        "question": "چگونه با پشتیبانی ارتباط برقرار کنم؟",
+        "answer": "از طریق بخش پشتیبانی یا چت‌بات می‌توانید درخواست خود را ثبت کنید. در صورت نیاز، گفتگوی شما برای کارشناسان پشتیبانی ارسال شده و پاسخ از طریق همان گفتگو در اختیار شما قرار خواهد گرفت.",
+        "category": "General",
+        "intent": "HumanSupport",
+        "keywords": "پشتیبانی چت بات کارشناس",
+        "navigation": null,
+        "priority": 98
+      },
+      {
+        "question": "چگونه اطلاعات سجامی خود را مشاهده کنم؟",
+        "answer": "اطلاعات سجامی از طریق بخش پروفایل قابل مشاهده است.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "سجام پروفایل",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "اگر رمز عبور خود را فراموش کنم چه کاری باید انجام دهم؟",
+        "answer": "از گزینه بازیابی رمز عبور در صفحه ورود استفاده کرده و مراحل نمایش داده‌شده را تکمیل کنید.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "فراموشی رمز عبور بازیابی",
+        "navigation": null,
+        "priority": 92
+      },
+      {
+        "question": "چگونه سرمایه‌گذاری را شروع کنم؟",
+        "answer": "از صفحه اصلی وارد بخش «سرمایه‌گذاری» شوید. در کارگزاری ثبت نام کنید و  سپس صندوق موردنظر خود را انتخاب کرده و فرآیند سرمایه‌گذاری را آغاز کنید.",
+        "category": "Investment",
+        "intent": "InvestmentStart",
+        "keywords": "شروع سرمایه گذاری کارگزاری",
+        "navigation": "investment",
+        "priority": 96
+      },
+      {
+        "question": "چه روش‌های سرمایه‌گذاری در نمادنو وجود دارد؟",
+        "answer": "در نمادنو امکان سرمایه‌گذاری در صندوق‌های صدور و ابطالی و صندوق‌های قابل معامله (ETF) فراهم است.",
+        "category": "Investment",
+        "intent": "InvestmentMethods",
+        "keywords": "روش سرمایه گذاری صدور ابطال etf",
+        "navigation": "investment",
+        "priority": 95
+      },
+      {
+        "question": "چگونه صندوق مناسب را انتخاب کنم؟",
+        "answer": "با ورود به بخش سرمایه‌گذاری، فهرست صندوق‌ها نمایش داده می‌شود. با انتخاب هر صندوق می‌توانید اطلاعات آن را مشاهده کرده و در صورت تمایل سرمایه‌گذاری خود را آغاز کنید.",
+        "category": "Investment",
+        "intent": "FundSelection",
+        "keywords": "انتخاب صندوق مناسب",
+        "navigation": "investment",
+        "priority": 94
+      },
+      {
+        "question": "چگونه درخواست صدور ثبت کنم؟",
+        "answer": "وارد صفحه صندوق شوید، گزینه «صدور» را انتخاب کرده، مبلغ سرمایه‌گذاری را وارد کنید و پرداخت را از طریق کیف پول یا درگاه پرداخت انجام دهید.",
+        "category": "Investment",
+        "intent": "FundIssuance",
+        "keywords": "درخواست صدور صندوق",
+        "navigation": "investment",
+        "priority": 93
+      },
+      {
+        "question": "بعد از پرداخت چه اتفاقی می‌افتد؟",
+        "answer": "پس از پرداخت موفق، درخواست صدور شما ثبت شده و برای بررسی و تأیید به مدیر صندوق ارسال می‌شود.",
+        "category": "Investment",
+        "intent": "FundIssuance",
+        "keywords": "بعد از پرداخت صدور",
+        "navigation": "investment",
+        "priority": 92
+      },
+      {
+        "question": "درخواست صدور چه مدت بررسی می‌شود؟",
+        "answer": "بررسی و تأیید درخواست صدور ممکن است تا دو روز کاری زمان ببرد.",
+        "category": "Investment",
+        "intent": "FundIssuanceStatus",
+        "keywords": "مدت بررسی درخواست صدور",
+        "navigation": "investment",
+        "priority": 90
+      },
+      {
+        "question": "وضعیت درخواست صدور را از کجا ببینم؟",
+        "answer": "از طریق بخش تاریخچه در هر صندوق می‌توانید وضعیت درخواست خود را مشاهده کنید.",
+        "category": "Investment",
+        "intent": "FundIssuanceStatus",
+        "keywords": "وضعیت درخواست صدور تاریخچه",
+        "navigation": "investment",
+        "priority": 90
+      },
+      {
+        "question": "چگونه درخواست ابطال ثبت کنم؟",
+        "answer": "وارد صفحه صندوق شوید و گزینه «ابطال» را انتخاب کنید. سپس تعداد یا مبلغ موردنظر را مشخص کرده و درخواست خود را ثبت نمایید.",
+        "category": "Investment",
+        "intent": "FundRedemption",
+        "keywords": "درخواست ابطال صندوق",
+        "navigation": "investment",
+        "priority": 93
+      },
+      {
+        "question": "درخواست ابطال چه مدت زمان می‌برد؟",
+        "answer": "درخواست ابطال پس از ثبت توسط مدیر صندوق بررسی شده و ممکن است تا دو روز کاری زمان ببرد.",
+        "category": "Investment",
+        "intent": "FundRedemptionStatus",
+        "keywords": "مدت زمان ابطال",
+        "navigation": "investment",
+        "priority": 90
+      },
+      {
+        "question": "وضعیت درخواست ابطال را از کجا ببینم؟",
+        "answer": "وضعیت درخواست‌های ابطال از طریق بخش تاریخچه سرمایه‌گذاری قابل مشاهده است.",
+        "category": "Investment",
+        "intent": "FundRedemptionStatus",
+        "keywords": "وضعیت ابطال تاریخچه",
+        "navigation": "investment",
+        "priority": 90
+      },
+      {
+        "question": "چگونه صندوق ETF خریداری کنم؟",
+        "answer": "از بخش سرمایه‌گذاری، صندوق ETF موردنظر را انتخاب کرده و مراحل خرید را تکمیل کنید.",
+        "category": "Investment",
+        "intent": "EtfPurchase",
+        "keywords": "خرید ETF",
+        "navigation": "investment",
+        "priority": 88
+      },
+      {
+        "question": "آیا برای خرید ETF نیاز به ثبت‌نام در کارگزاری دارم؟",
+        "answer": "بله. برای انجام معاملات صندوق‌های ETF لازم است ابتدا در کارگزاری ثبت‌نام کرده باشید.",
+        "category": "Investment",
+        "intent": "BrokerageRegistration",
+        "keywords": "ثبت نام کارگزاری ETF",
+        "navigation": "investment",
+        "priority": 88
+      },
+      {
+        "question": "چگونه واحدهای ETF خود را بفروشم؟",
+        "answer": "با ورود به صفحه صندوق ETF و انتخاب گزینه فروش، می‌توانید فرآیند فروش واحدهای خود را انجام دهید.",
+        "category": "Investment",
+        "intent": "EtfSell",
+        "keywords": "فروش واحد ETF",
+        "navigation": "investment",
+        "priority": 88
+      },
+      {
+        "question": "نئوبانک چیست؟",
+        "answer": "نئوبانک نمادنو امکان استفاده از خدمات بانکی را به‌صورت آنلاین و بدون مراجعه حضوری فراهم می‌کند.",
+        "category": "Neobank",
+        "intent": "NeobankInformation",
+        "keywords": "نئوبانک خدمات بانکی آنلاین",
+        "navigation": "neobank",
+        "priority": 95
+      },
+      {
+        "question": "آیا افتتاح حساب به‌صورت آنلاین انجام می‌شود؟",
+        "answer": "بله. افتتاح حساب در نمادنو به‌صورت کاملاً آنلاین انجام می‌شود.",
+        "category": "Neobank",
+        "intent": "AccountOpening",
+        "keywords": "افتتاح حساب آنلاین",
+        "navigation": "neobank",
+        "priority": 92
+      },
+      {
+        "question": "چگونه انتقال وجه انجام دهم؟",
+        "answer": "از بخش انتقال وجه، نوع انتقال موردنظر را انتخاب کرده و اطلاعات مقصد و مبلغ را وارد کنید.",
+        "category": "Neobank",
+        "intent": "MoneyTransfer",
+        "keywords": "انتقال وجه مقصد مبلغ",
+        "navigation": "neobank",
+        "priority": 92
+      },
+      {
+        "question": "چه روش‌هایی برای انتقال وجه وجود دارد؟",
+        "answer": "در نئوبانک امکان انتقال وجه از طریق پایا، ساتنا و پل فراهم است.",
+        "category": "Neobank",
+        "intent": "TransferMethods",
+        "keywords": "روش انتقال پایا ساتنا پل",
+        "navigation": "neobank",
+        "priority": 91
+      },
+      {
+        "question": "آیا امکان کارت‌به‌کارت وجود دارد؟",
+        "answer": "خیر. در حال حاضر امکان انتقال وجه از طریق کارت‌به‌کارت در نئوبانک ارائه نمی‌شود.",
+        "category": "Neobank",
+        "intent": "CardToCard",
+        "keywords": "کارت به کارت",
+        "navigation": "neobank",
+        "priority": 90
+      },
+      {
+        "question": "چگونه رمز کارت خود را تغییر دهم؟",
+        "answer": "در نئوبانک از بخش خدمات کارت، گزینه تغییر رمز را انتخاب کرده و مراحل نمایش داده‌شده را تکمیل کنید.",
+        "category": "Neobank",
+        "intent": "CardPasswordChange",
+        "keywords": "تغییر رمز کارت",
+        "navigation": "neobank",
+        "priority": 89
+      },
+      {
+        "question": "اگر انتقال وجه انجام نشود چه کاری باید انجام دهم؟",
+        "answer": "ابتدا وضعیت تراکنش را بررسی کنید. در صورت ادامه مشکل، با پشتیبانی تماس بگیرید.",
+        "category": "Neobank",
+        "intent": "TransferStatus",
+        "keywords": "انتقال وجه انجام نشود وضعیت تراکنش",
+        "navigation": "neobank",
+        "priority": 89
+      },
+      {
+        "question": "آیا تاریخچه انتقال وجه قابل مشاهده است؟",
+        "answer": "بله. تمامی تراکنش‌های انتقال وجه از طریق تاریخچه قابل مشاهده هستند.",
+        "category": "Neobank",
+        "intent": "TransactionHistory",
+        "keywords": "تاریخچه انتقال وجه تراکنش",
+        "navigation": "neobank",
+        "priority": 88
+      },
+      {
+        "question": "آیا امکان مسدود کردن کارت وجود دارد؟",
+        "answer": "می‌توانید از طریق بخش خدمات کارت درخواست مسدودسازی کارت را ثبت کنید.",
+        "category": "Neobank",
+        "intent": "CardBlock",
+        "keywords": "مسدودسازی کارت",
+        "navigation": "neobank",
+        "priority": 88
+      },
+      {
+        "question": "اگر رمز کارت را فراموش کنم چه کاری باید انجام دهم؟",
+        "answer": "از طریق بخش خدمات کارت می‌توانید نسبت به تغییر یا بازیابی رمز مطابق فرآیندهای موجود اقدام کنید.",
+        "category": "Neobank",
+        "intent": "CardPasswordRecovery",
+        "keywords": "فراموشی رمز کارت بازیابی",
+        "navigation": "neobank",
+        "priority": 88
+      },
+      {
+        "question": "پاسخ پشتیبانی را از کجا دریافت می‌کنم؟",
+        "answer": "پاسخ کارشناسان از طریق صفحه گفتگو چت بات در اختیار شما قرار می‌گیرد.",
+        "category": "General",
+        "intent": "HumanSupport",
+        "keywords": "پاسخ پشتیبانی گفتگو",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "آیا لازم است سؤال خود را دوباره برای پشتیبانی بنویسم؟",
+        "answer": "خیر. تاریخچه گفتگو به همراه درخواست شما برای کارشناسان ارسال می‌شود و نیازی به توضیح مجدد نیست.",
+        "category": "General",
+        "intent": "HumanSupport",
+        "keywords": "توضیح مجدد پشتیبانی تاریخچه",
+        "navigation": null,
+        "priority": 89
+      },
+      {
+        "question": "آیا می‌توانم گفتگوی قبلی خود را مشاهده کنم؟",
+        "answer": "بله. تاریخچه گفتگوهای شما در چت‌بات قابل مشاهده خواهد بود.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "تاریخچه گفتگو قبلی",
+        "navigation": null,
+        "priority": 87
+      },
+      {
+        "question": "آیا اطلاعات گفتگوهای من محرمانه است؟",
+        "answer": "بله. اطلاعات گفتگوها مطابق سیاست‌های امنیتی و محرمانگی سامانه نگهداری می‌شود.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "محرمانگی امنیت گفتگو",
+        "navigation": null,
+        "priority": 87
+      },
+      {
+        "question": "از کجا سرمایه‌گذاری را شروع کنم؟",
+        "answer": "از صفحه اصلی وارد بخش «سرمایه‌گذاری» شوید و صندوق موردنظر خود را انتخاب کنید.",
+        "category": "Investment",
+        "intent": "NavigateInvestment",
+        "keywords": "از کجا سرمایه گذاری",
+        "navigation": "investment",
+        "priority": 88
+      },
+      {
+        "question": "از کجا حساب بانکی باز کنم؟",
+        "answer": "از صفحه اصلی وارد بخش «نئوبانک» شوید و گزینه افتتاح حساب را انتخاب کنید.",
+        "category": "Neobank",
+        "intent": "NavigateNeobank",
+        "keywords": "از کجا حساب بانکی",
+        "navigation": "neobank",
+        "priority": 88
+      },
+      {
+        "question": "از کجا بیمه بخرم؟",
+        "answer": "از صفحه اصلی وارد بخش «بیمه» شوید و بیمه موردنظر خود را انتخاب کنید.",
+        "category": "Insurance",
+        "intent": "NavigateInsurance",
+        "keywords": "از کجا بیمه",
+        "navigation": "insurance",
+        "priority": 88
+      },
+      {
+        "question": "از کجا تسهیلات دریافت کنم؟",
+        "answer": "از صفحه اصلی وارد بخش «اعتباردهی» شوید و طرح‌های فعال را مشاهده کنید.",
+        "category": "Leasing",
+        "intent": "NavigateLeasing",
+        "keywords": "از کجا تسهیلات اعتباردهی",
+        "navigation": "leasing",
+        "priority": 88
+      },
+      {
+        "question": "از کجا قبض پرداخت کنم؟",
+        "answer": "از صفحه اصلی وارد بخش «خدمات عمومی» شوید و گزینه پرداخت قبوض را انتخاب کنید.",
+        "category": "General",
+        "intent": "NavigatePublicServices",
+        "keywords": "از کجا قبض پرداخت خدمات عمومی",
+        "navigation": "public-services",
+        "priority": 88
+      },
+      {
+        "question": "آیا می‌توانی برای من سرمایه‌گذاری انجام دهی؟",
+        "answer": "خیر. چت‌بات تنها راهنمای استفاده از اپلیکیشن است و امکان انجام عملیات مالی را ندارد.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "انجام سرمایه گذاری توسط چت بات",
+        "navigation": null,
+        "priority": 92
+      },
+      {
+        "question": "آیا می‌توانی برای من حساب بانکی باز کنی؟",
+        "answer": "خیر. چت‌بات امکان انجام عملیات ندارد و فقط مسیر انجام آن را به شما نمایش می‌دهد.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "باز کردن حساب بانکی توسط چت بات",
+        "navigation": null,
+        "priority": 92
+      },
+      {
+        "question": "آیا می‌توانی برای من بیمه خریداری کنی؟",
+        "answer": "خیر. برای خرید بیمه باید از بخش بیمه در اپلیکیشن اقدام کنید.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "خرید بیمه توسط چت بات",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "آیا می‌توانی درخواست مرا لغو کنی؟",
+        "answer": "خیر. چت‌بات امکان تغییر یا لغو درخواست‌ها را ندارد.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "لغو درخواست چت بات",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "آیا می‌توانی اطلاعات حساب من را تغییر دهی؟",
+        "answer": "خیر. چت‌بات امکان ویرایش اطلاعات حساب کاربری را ندارد.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "تغییر اطلاعات حساب توسط چت بات",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "آیا می‌توانی مشاوره سرمایه‌گذاری ارائه دهی؟",
+        "answer": "خیر. چت‌بات صرفاً درباره امکانات و فرآیندهای اپلیکیشن راهنمایی ارائه می‌دهد و مشاوره مالی یا سرمایه‌گذاری ارائه نمی‌کند.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "مشاوره سرمایه گذاری چت بات",
+        "navigation": null,
+        "priority": 92
+      },
+      {
+        "question": "آیا می‌توانی وضعیت بازار یا قیمت سهام را پیش‌بینی کنی؟",
+        "answer": "خیر. چت‌بات اطلاعات تحلیلی یا پیش‌بینی بازار ارائه نمی‌دهد.",
+        "category": "General",
+        "intent": "GeneralInformation",
+        "keywords": "پیش بینی بازار قیمت سهام",
+        "navigation": null,
+        "priority": 90
+      },
+      {
+        "question": "آیا می‌توانی برای من تصمیم بگیری کدام صندوق بهتر است؟",
+        "answer": "خیر. انتخاب صندوق و تصمیم‌گیری برای سرمایه‌گذاری بر عهده کاربر است و چت‌بات تنها اطلاعات مربوط به امکانات اپلیکیشن را ارائه می‌دهد.",
+        "category": "General",
+        "intent": "FundSelection",
+        "keywords": "تصمیم گیری صندوق بهتر",
+        "navigation": null,
+        "priority": 91
+      }
+    ]
+  }
+}

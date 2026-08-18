@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Namadno.AI.Support.Domain</RootNamespace>
+    <AssemblyName>Namadno.AI.Support.Domain</AssemblyName>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Namadno.AI.Support.UnitTests" />
+  </ItemGroup>
+</Project>

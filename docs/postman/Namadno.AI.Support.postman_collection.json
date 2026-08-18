@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "7c2a1e90-4b1f-4c8e-9d3a-8f1c2b3a4d5e",
+    "name": "Namadno AI Support",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5080"
+    },
+    {
+      "key": "conversationId",
+      "value": ""
+    },
+    {
+      "key": "ticketId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Live",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health/live"
+          }
+        },
+        {
+          "name": "Ready",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/health/ready"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chat",
+      "item": [
+        {
+          "name": "Create conversation",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/chat/conversations"
+          }
+        },
+        {
+          "name": "Send message",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"content\": \"چطور میتونم سرمایه گذاری کنم؟\" }"
+            },
+            "url": "{{baseUrl}}/api/v1/chat/conversations/{{conversationId}}/messages"
+          }
+        },
+        {
+          "name": "Confirm support",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Idempotency-Key",
+                "value": "smoke-1"
+              },
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/chat/conversations/{{conversationId}}/support/confirm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "List FAQs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/faqs"
+          }
+        },
+        {
+          "name": "Analytics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/analytics"
+          }
+        },
+        {
+          "name": "Unanswered",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/unanswered"
+          }
+        },
+        {
+          "name": "Support tickets",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Debug-User-Id",
+                "value": "dev-user"
+              }
+            ],
+            "url": "{{baseUrl}}/api/v1/admin/support/tickets"
+          }
+        }
+      ]
+    }
+  ]
+}
